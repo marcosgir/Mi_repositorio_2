@@ -1,0 +1,224 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+*
+p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#grid-area
+{
+    display:grid;
+    gap: 0px;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+        "logo"
+        "body"
+        "pie";
+     grid-template-rows: 0fr 1fr 0fr 
+}
+
+header
+{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    display: flex;
+    justify-content:space-around;
+}
+
+header .cont_logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    height: 40px;
+} 
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl 
+{
+    justify-content: space-around;
+}
+
+.navbar-collapse
+{
+flex-grow: 0;
+}
+
+header .menu
+{
+    position: absolute;
+    right: 15%;
+    font-size: 13px;
+    top:35%
+} 
+
+@media screen and (max-width: 750px)
+{
+    header .menu
+    {
+        position: absolute;
+        right: 5%;
+        top: 4%;
+    }
+}
+
+section
+{
+    background-image:url(../Imagenes/background.jpg);
+    grid-area: body;
+    align-items: center;
+/*     justify-content: center; */
+    display: flex;
+    flex-direction: column;
+} 
+
+.titulo
+{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: calc(0.5em + 1.5vw);
+    padding: 30px;
+}
+
+.clientes1
+{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ @media screen and (max-width: 750px)
+{
+    .clientes1
+    {
+        flex-direction: column;
+    }
+}  
+
+.imagenes
+{
+    width: 60%;
+    margin: 0.5%;
+}
+
+@media screen and (max-width: 750px)
+{
+    .imagenes
+    {
+        width: 40%;
+        margin: 3%;
+    }
+} 
+
+.clientes
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer
+{
+    background-color: rgb(52, 49, 49);
+    width: 100%;
+    grid-area: pie;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: space-around;
+}
+
+footer .contacto1
+{
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    color: rgb(188, 187, 184);
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 900px)
+{
+    .contacto1
+        {
+            display:none;
+        }
+}
+
+footer .contacto2
+{
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(188, 187, 184);
+}
+
+@media screen and (max-width: 900px)
+{
+    .contacto2
+        {
+            display:none;
+        }
+}
+
+footer .contacto3
+{
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(188, 187, 184);
+}
+
+@media screen and (max-width: 900px)
+{
+    .contacto3
+        {
+            display:none;
+        }
+}
+
+.logo_reducido
+{
+    height: 40px;
+    position: relative;
+    margin:0.3%;
+}
+
+.social
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(188, 187, 184);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.redes1 
+{
+    height: 30px;
+    margin: 5px;
+    position: relative;
+    left: 50%;
+}
+
+.redes2 
+{
+    height: 30px;
+    position: relative;
+    left: 100%;
+}

@@ -1,0 +1,318 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+*
+p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#grid-area
+{
+    display:grid;
+    gap: 0px;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+        "logo"
+        "body"
+        "pie";
+     grid-template-rows: 0fr 1fr 0fr 
+}
+
+header
+{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    display: flex;
+    justify-content:space-around;
+}
+
+header .cont_logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    height: 40px;
+} 
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl 
+{
+    justify-content: space-around;
+}
+
+.navbar-collapse
+{
+flex-grow: 0;
+}
+
+header .menu
+{
+    position: absolute;
+    right: 15%;
+    font-size: 13px;
+    top:35%
+} 
+
+@media screen and (max-width: 750px)
+{
+    header .menu
+    {
+        position: absolute;
+        right: 5%;
+        top: 4%;
+    }
+}
+
+section
+{
+    background-image:url(../Imagenes/background.jpg);
+    grid-area: body;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+.titulo
+{
+    color:red;
+    font-size: calc(0.5em + 1.5vw);
+    padding: 5px;
+    position: relative;
+    top: 5%;
+    left: 3%;
+    transform:rotate(355deg);
+}
+
+.nombre
+{
+    color:white;
+    font-size: calc(0.5em + 1.5vw);
+    position: relative;
+    padding: 5px;
+}
+
+.nombre1
+{
+    width: calc(15vw);
+}
+
+input:focus
+{
+    height: calc(2vw);
+    background-color: rgb(223, 155, 155);
+}
+
+.email
+{
+    color:white;
+    font-size: calc(0.5em + 1.5vw);
+    position: relative;
+    padding: 5px;
+}
+
+.email1
+{
+    width: calc(17vw);
+}
+
+.pass
+{
+    color:white;
+    font-size: calc(0.5em + 1.5vw);
+    position: relative;
+    padding: 5px;
+}
+
+.pass1
+{
+    width: calc(14vw);
+}
+
+.coment
+{
+    display: flex;
+    position: relative;
+    padding: 5px;
+}
+
+.coment1
+{
+    width:calc(35vw);
+    height: calc(10vw);
+}
+
+textarea:focus
+{
+    background-color: rgb(223, 155, 155);
+}
+
+@media screen and (max-width: 900px)
+{
+    .coment
+        {
+            position: relative;
+        }
+}
+
+@media screen and (max-width: 900px)
+{
+    .coment1
+        {
+            width:calc(45vw);
+            height: calc(20vw);
+        }
+}
+
+.adj
+{
+    color:white;
+    font-size: calc(0.5em + 1vw);
+    position: relative;
+}
+
+.term
+{
+    color:white;
+    font-size: calc(0.5em + 0.5vw);
+    position: relative;
+    padding: 5px;
+}
+
+@media screen and (max-width: 900px)
+{
+    .term
+        {
+     display: none;
+        }
+}
+
+.enviar
+{
+    color:white;
+    position: relative;
+    padding: 5px;
+}
+
+@media screen and (max-width: 900px)
+{
+    .enviar
+        {
+            position: relative;
+        }
+}
+
+.bot_enviar
+{
+    font-size: calc(0.5em + 1vw);
+}
+
+.bot_reset
+{
+    font-size: calc(0.5em + 1vw);
+    position: relative;
+    left:10%;
+}
+
+footer
+{
+    background-color: rgb(52, 49, 49);
+    width: 100%;
+    grid-area: pie;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: space-around;
+}
+
+footer .contacto1
+{
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    color: rgb(188, 187, 184);
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 900px)
+{
+    .contacto1
+        {
+            display:none;
+        }
+}
+
+footer .contacto2
+{
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(188, 187, 184);
+}
+
+@media screen and (max-width: 900px)
+{
+    .contacto2
+        {
+            display:none;
+        }
+}
+
+footer .contacto3
+{
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(188, 187, 184);
+}
+
+@media screen and (max-width: 900px)
+{
+    .contacto3
+        {
+            display:none;
+        }
+}
+
+.logo_reducido
+{
+    height: 40px;
+    position: relative;
+    margin:0.3%;
+}
+
+.social
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(188, 187, 184);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.redes1 
+{
+    height: 30px;
+    margin: 5px;
+    position: relative;
+    left: 50%;
+}
+
+.redes2 
+{
+    height: 30px;
+    position: relative;
+    left: 100%;
+}
