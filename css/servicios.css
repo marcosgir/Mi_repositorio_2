@@ -20,7 +20,7 @@ p
         "logo"
         "body"
         "pie";
-     grid-template-rows: 0fr 1fr 0fr 
+     grid-template-rows: 0fr 1fr 0fr;
 }
 
 header
