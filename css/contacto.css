@@ -76,37 +76,69 @@ section
     grid-area: body;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    font-family:'Times New Roman', Times, serif;
-} 
+    align-items: center;
+    flex-direction: row;
+    min-height: min-content;
+}
+
+@media screen and (max-width: 600px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+}
 
 .titulo
 {
     color:red;
-    font-size: calc(0.5em + 1.5vw);
-    padding: 5px;
-    position: relative;
-    top: 5%;
-    left: 3%;
+    font-size: calc(0.5em + 0.8vw);
+    padding: 8%;
     transform:rotate(355deg);
+}
+
+@media screen and (max-width: 600px)
+{
+    .titulo
+    {
+        flex-direction: column;
+        padding: 3%;
+    }
+}
+
+.elementos
+{
+    justify-content: space-around;
+    height: 100%;
+    padding: 5%;
+}
+
+@media screen and (max-width: 600px)
+{
+    .elementos
+    {
+        flex-direction: column;
+        display: flex;
+    }
 }
 
 .nombre
 {
     color:white;
     font-size: calc(0.5em + 1.5vw);
-    position: relative;
-    padding: 5px;
+    padding: 7px;
+    width: 80%;
+    margin: 2%;
 }
 
 .nombre1
 {
-    width: calc(15vw);
+    width: 60%;
 }
 
 input:focus
 {
-    height: calc(2vw);
+    height: calc(5vw);
     background-color: rgb(223, 155, 155);
 }
 
@@ -114,39 +146,40 @@ input:focus
 {
     color:white;
     font-size: calc(0.5em + 1.5vw);
-    position: relative;
     padding: 5px;
+    width: 80%;
+    margin: 2%;
 }
 
 .email1
 {
-    width: calc(17vw);
+    width: 70%;
 }
 
 .pass
 {
     color:white;
     font-size: calc(0.5em + 1.5vw);
-    position: relative;
     padding: 5px;
+    margin: 2%;
 }
 
 .pass1
 {
-    width: calc(14vw);
+    width: 48%;
 }
 
 .coment
 {
     display: flex;
-    position: relative;
     padding: 5px;
 }
 
 .coment1
 {
     width:calc(35vw);
-    height: calc(10vw);
+    height: calc(15vw);
+    margin: 2%;
 }
 
 textarea:focus
@@ -154,71 +187,37 @@ textarea:focus
     background-color: rgb(223, 155, 155);
 }
 
-@media screen and (max-width: 900px)
-{
-    .coment
-        {
-            position: relative;
-        }
-}
-
-@media screen and (max-width: 900px)
-{
-    .coment1
-        {
-            width:calc(45vw);
-            height: calc(20vw);
-        }
-}
-
 .adj
 {
     color:white;
     font-size: calc(0.5em + 1vw);
-    position: relative;
+    margin: 2%;
 }
 
 .term
 {
     color:white;
     font-size: calc(0.5em + 0.5vw);
-    position: relative;
-    padding: 5px;
-}
-
-@media screen and (max-width: 900px)
-{
-    .term
-        {
-     display: none;
-        }
+    padding: 10px;
+    margin: 2%;
 }
 
 .enviar
 {
     color:white;
-    position: relative;
     padding: 5px;
-}
-
-@media screen and (max-width: 900px)
-{
-    .enviar
-        {
-            position: relative;
-        }
+    margin: 2%;
 }
 
 .bot_enviar
 {
     font-size: calc(0.5em + 1vw);
+    margin: 2%;
 }
 
 .bot_reset
 {
     font-size: calc(0.5em + 1vw);
-    position: relative;
-    left:10%;
 }
 
 footer

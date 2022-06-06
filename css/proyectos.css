@@ -70,7 +70,6 @@ header .menu
     }
 }
 
-
 section
 {
     background-image:url(../Imagenes/background.jpg);
@@ -79,7 +78,30 @@ section
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    animation-iteration-count: 1;
+} 
+
+@keyframes efecto2
+{
+    0%
+    {
+        transform: rotate(0deg) ;
+    }
+    25%
+    {
+        transform: rotate(15deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    75%
+    {
+        transform: rotate(-15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
 }
 
 .titulo
@@ -87,23 +109,29 @@ section
     color:red;
     font-size: calc(0.5em + 1.5vw);
     padding: 30px;
+    animation: efecto2 5s linear 0s infinite;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .parrafo
 {
     color:white;
-    font-size: calc(0.8em + 0.8vw);
-    padding: 40px;
+    font-size: calc(1em + 1vw);
     font-family:'Times New Roman', Times, serif;
-    align-content: center;
 }
 
-.video
+.imagenes
 {
-    padding: 20px;
-    display: flex;
-    width:calc(85vw);
-    justify-content: center;
+    width: 70%;
+    margin: 2%;
+}
+
+@media screen and (max-width: 900px)
+{
+    .imagenes
+        {
+            width: 90%;;
+        }
 }
 
 footer
